@@ -3,7 +3,8 @@ Random linux scripts and programs
 
 # What's in here?
  - A fullscreen - resolution forcing program
-   - Useful for playing video games on 4K display w/ low end GPU that do not allow you to downscale the resolution (TESV: Skyrim, Arma 3, War thunder, and many more)
+   - Useful for playing video games on 4K display w/ low end GPU that do not allow you to downscale the resolution (TESV: Skyrim, Arma 3, and many more)
+   - It don't work with war thunder because they're engine is fucked up
    - NO PERFORMANCE DEGREDATION, Unlike [run_scaled](https://github.com/kaueraal/run_scaled)
  - ANSI Colors demo script ![img](https://i.imgur.com/iMla1pb.png)
  - DNS Nameserver force setting program
