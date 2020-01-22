@@ -6,9 +6,7 @@ x=0	# X offset of target window
 y=0	# Y offset of target window
 
 wmf="/tmp/.wmctrl_l"
-if [ -e "$wmf" ]; then
-	echo"Program already running!"
-fi
+if [ -e "$wmf" ]; then echo "Program already running!"; exit 1; fi
 wmctrl -l >"$wmf"
 n=0; while IFS= read -r line; do
 	let n=n+1
