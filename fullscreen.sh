@@ -1,5 +1,10 @@
 #!/bin/bash
 
+w=1920	# Width of target window
+h=1080	# Height of target window
+x=0	# X offset of target window
+y=0	# Y offset of target window
+
 wmf="/tmp/.wmctrl_l"
 if [ -e "$wmf" ]; then
 	echo"Program already running!"
@@ -27,11 +32,9 @@ else
 	echo "ID: $id"
 fi
 
-
-w=1920
-h=1080
 c() {
 	echo $@; $@
 }
-c wmctrl -v -i -r $id -e 0,0,0,$w,$h -b toggle,fullscreen
+c wmctrl -v -i -r $id -e 0,$x,$y,$w,$h -b toggle,fullscreen
 #c wmctrl -v -i -r $id 
+	
