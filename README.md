@@ -10,3 +10,4 @@ Random linux scripts and programs
  - DNS Nameserver force setting program
  - Script for remotely mounting samba shares
  - Script to print out system battery
+ - Script to start server and redirect stdin/stdout over the network
